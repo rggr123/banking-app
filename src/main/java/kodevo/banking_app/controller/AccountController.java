@@ -58,12 +58,12 @@ public class AccountController {
         return ResponseEntity.ok(accountDto);
     }
 
-    //Get All Account REST API
-    @GetMapping()
-    public ResponseEntity<List<AccountDto>> getAllAccount(){
-        List<AccountDto> accounts = accountService.getAllAccounts();
-        return ResponseEntity.ok(accounts);
-    }
+    // //Get All Account REST API
+    // @GetMapping()
+    // public ResponseEntity<List<AccountDto>> getAllAccount(){
+    //     List<AccountDto> accounts = accountService.getAllAccounts();
+    //     return ResponseEntity.ok(accounts);
+    // }
 
     // Delete Account REST API
     @DeleteMapping("/{id}")
